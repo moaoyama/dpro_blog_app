@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+ruby '3.3.0'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.2"
@@ -55,6 +56,11 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem "capistrano", "~> 3.17", require: false
+  gem "capistrano-rails", "~> 1.6", require: false
+#  gem 'capistrano-safe-deploy-to'
+  gem 'capistrano-rbenv', '~> 2.2'
+  gem 'capistrano-bundler', '~> 2.1'
 end
 
 group :test do
